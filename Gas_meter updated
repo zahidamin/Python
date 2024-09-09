@@ -1,0 +1,44 @@
+# Input readings
+previous_reading = int(input("Please enter your previous reading: "))
+current_reading = int(input("Please enter your current reading: "))
+difference = current_reading - previous_reading
+print("Difference:", difference)
+
+factor = float(input("Factor: "))
+gcv = float(input("GCV: "))
+fix = float(input("Fix: "))
+meter_rent = float(input("meter_rent: "))
+
+
+# Calculate hm3 and mmbtu
+hm3 = difference * factor / 100000
+mmbtu = hm3 * gcv / 281.7385
+print("MMBTU:", mmbtu)
+# Calculate total cost based on mmbtu
+
+if mmbtu <= 0.25:
+    price = 500
+elif mmbtu <= 0.60:
+    price = 850
+elif mmbtu <= 1.0:
+    price = 1250
+elif mmbtu <= 1.5:
+    price = 1450
+elif mmbtu <= 2:
+    price = 1900
+elif mmbtu <= 3:
+    price = 3300
+elif mmbtu <= 4:
+    price = 3800
+else:
+    mmbtu > 4
+    price = 4200 
+
+total = hm3 * price
+print("total:", total)
+gst = total * 0.25  # GST calculation
+print("GST:", gst)
+
+# Print final amount
+final_amount = total + gst + meter_rent
+print("Amount:", final_amount)
