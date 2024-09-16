@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>350</height>
+    <width>800</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,8 +26,8 @@
       <widget class="QPushButton" name="pushCalculate">
        <property name="geometry">
         <rect>
-         <x>5</x>
-         <y>155</y>
+         <x>23</x>
+         <y>175</y>
          <width>471</width>
          <height>26</height>
         </rect>
@@ -39,8 +39,8 @@
       <widget class="QWidget" name="formLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>5</x>
-         <y>30</y>
+         <x>23</x>
+         <y>50</y>
          <width>471</width>
          <height>124</height>
         </rect>
@@ -114,9 +114,9 @@
       <widget class="QWidget" name="gridLayoutWidget">
        <property name="geometry">
         <rect>
-         <x>490</x>
-         <y>30</y>
-         <width>181</width>
+         <x>517</x>
+         <y>49</y>
+         <width>242</width>
          <height>161</height>
         </rect>
        </property>
@@ -224,10 +224,20 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="0" colspan="2">
+        <item row="3" column="1">
          <widget class="QPushButton" name="push_0">
           <property name="text">
            <string>0</string>
+          </property>
+          <property name="shortcut">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="push_c">
+          <property name="text">
+           <string>C</string>
           </property>
           <property name="shortcut">
            <string>0</string>
@@ -239,8 +249,8 @@
       <widget class="QPlainTextEdit" name="totAmount">
        <property name="geometry">
         <rect>
-         <x>5</x>
-         <y>185</y>
+         <x>23</x>
+         <y>205</y>
          <width>471</width>
          <height>70</height>
         </rect>
@@ -252,10 +262,10 @@
       <widget class="QLabel" name="header">
        <property name="geometry">
         <rect>
-         <x>180</x>
-         <y>250</y>
-         <width>331</width>
-         <height>41</height>
+         <x>210</x>
+         <y>300</y>
+         <width>327</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="maximumSize">
@@ -277,8 +287,8 @@
       <widget class="QPushButton" name="pushOnlineBill">
        <property name="geometry">
         <rect>
-         <x>515</x>
-         <y>205</y>
+         <x>568</x>
+         <y>230</y>
          <width>121</width>
          <height>41</height>
         </rect>
@@ -290,9 +300,9 @@
       <widget class="QLabel" name="footer">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>0</y>
-         <width>271</width>
+         <x>240</x>
+         <y>10</y>
+         <width>267</width>
          <height>26</height>
         </rect>
        </property>
@@ -321,7 +331,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
+     <width>800</width>
      <height>23</height>
     </rect>
    </property>
